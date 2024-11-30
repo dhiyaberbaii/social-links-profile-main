@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .parent{
+      background-color: #141414;
+      display: flex;
+      justify-content: center; /* Center content */
+      align-items: center;
+      flex-direction: column; /* Stack children vertically */
+      gap: 10px;
+      height: 100vh;
+      padding: 100px;
+    }
+    .child{
+      margin: 30px ;
+      background-color: #1f1f1f;
+      padding: 30px;
+      border-radius: 20px;
+      width: calc(100% - 60px);
+      max-width: 800px;
+    
+    }
+    @media (max-width: 768px) {
+  .child{
+    margin: 20px; /* Reduce margin on smaller screens */
+    padding: 20px;
+  }
+  .container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 200px;}
+  img{
+    border-radius: 50%;
+  }
+  h2{
+    color: #fff;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  .adress{
+    color: yellow;
+  }
+  .job{
+    color: #a4a4a4;
+  }
+  .button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  gap: 10px; /* Add space between buttons */
+  padding: 20px;
+}
+
+/* Button styles */
+.custom-button {
+  background-color: #333333; /* Primary color */
+  color: white; /* Text color */
+  font-size: 16px; /* Text size */
+  font-family: Arial, sans-serif; /* Font style */
+  padding: 10px 20px; /* Padding for button size */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  text-align: center; /* Center the text */
+  width: 250px; /* Fixed button width */
+}
+
+/* Hover effect */
+.custom-button:hover {
+  background-color: #333339; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button */
+}
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <div class="child">
+      <div class="container">
+        <img src="/assets/images/avatar-jessica.jpeg" alt="#" >
+      </div>
+      
+      <h2>
+        Jessica Randall
+      </h2>
+  <p class="adress">
+    London, United Kingdom
+  </p>
+  <p class="job">
+    "Front-end developer and avid reader."
+  </p>
+  <div class="button-container">
+  <button class="custom-button">GitHub</button>
+  <button class="custom-button">Frontend Mentor</button>
+  <button class="custom-button">LinkedIn</button>
+  <button class="custom-button">Twitter</button>
+  <button class="custom-button">Instagram</button>
+</div>
+
+  
+  
+  
+  
+  
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/dhiyaberbaii">dhia eddine berbaii</a>.
+  </div>
+  </div>
+</body>
+</html>
