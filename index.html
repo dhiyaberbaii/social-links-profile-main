@@ -10,80 +10,98 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .parent{
-      background-color: #141414;
-      display: flex;
-      justify-content: center; /* Center content */
-      align-items: center;
-      flex-direction: column; /* Stack children vertically */
-      gap: 10px;
-      height: 100vh;
-      padding: 100px;
-    }
-    .child{
-      margin: 30px ;
-      background-color: #1f1f1f;
-      padding: 30px;
-      border-radius: 20px;
-      width: calc(100% - 60px);
-      max-width: 800px;
-    
-    }
-    @media (max-width: 768px) {
-  .child{
-    margin: 20px; /* Reduce margin on smaller screens */
-    padding: 20px;
-  }
-  .container {
+    .container {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   height: 200px;}
-  img{
-    border-radius: 50%;
-  }
-  h2{
-    color: #fff;
-    text-align: center;
-  }
-  p{
-    text-align: center;
-  }
-  .adress{
-    color: yellow;
-  }
-  .job{
-    color: #a4a4a4;
-  }
-  .button-container {
+  .parent {
+  background-color: #141414;
   display: flex;
-  flex-direction: column; /* Stack buttons vertically */
-  align-items: center; /* Center buttons horizontally */
-  gap: 10px; /* Add space between buttons */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  padding: 100px;
+}
+
+.child {
+  margin: 30px;
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 20px;
+  width: calc(100% - 60px);
+  max-width: 800px;
+}
+
+.container img {
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.adress {
+  color: yellow;
+}
+
+.job {
+  color: #a4a4a4;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   padding: 20px;
 }
 
-/* Button styles */
 .custom-button {
-  background-color: #333333; /* Primary color */
-  color: white; /* Text color */
-  font-size: 16px; /* Text size */
-  font-family: Arial, sans-serif; /* Font style */
-  padding: 10px 20px; /* Padding for button size */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Change cursor to pointer */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-  text-align: center; /* Center the text */
-  width: 250px; /* Fixed button width */
+  background-color: #333333;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  width: 250px;
 }
 
-/* Hover effect */
 .custom-button:hover {
-  background-color: #333339; /* Darker green on hover */
-  transform: scale(1.05); /* Slightly enlarge button */
+  background-color: #444444;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .child {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
   </style>
 </head>
@@ -92,7 +110,7 @@
   <div class="parent">
     <div class="child">
       <div class="container">
-        <img src="/assets/images/avatar-jessica.jpeg" alt="#" >
+        <img src="assets/images/avatar-jessica.jpeg" alt="#" >
       </div>
       
       <h2>
